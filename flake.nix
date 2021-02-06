@@ -9,7 +9,6 @@
     nixosConfigurations.vision = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = (builtins.attrValues core.nixosModules) ++ [
-        ./local.nix
         ./configuration.nix
         {
           home-manager.users.iulian = { ... }: {

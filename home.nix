@@ -9,11 +9,11 @@
     slack
     remmina
     xdg_utils
+    calibre
     openmw
   ];
 
   programs.chromium.enable = true;
-  programs.chromium.package = pkgs.chromium.override { enableVaapi = true; };
   programs.firefox.enable = true;
 
   home.sessionVariables = rec {
