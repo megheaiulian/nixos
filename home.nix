@@ -14,7 +14,7 @@
   ];
 
   programs.chromium.enable = true;
-  programs.firefox.enable = true;
+  programs.brave.enable = true;
 
   home.sessionVariables = rec {
     VISUAL = "kak";
@@ -42,5 +42,8 @@
   services.gpg-agent.enable = true;
   services.gpg-agent.pinentryFlavor = "gnome3";
   programs.gpg.enable = true;
+
+  #broot
+  programs.broot.enable = true;
 
 }

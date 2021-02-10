@@ -64,5 +64,5 @@
   xdg.portal.enable = true;
 
   programs.adb.enable = true;
-
+  virtualisation.lxc.enable = true;
 }
