@@ -53,6 +53,6 @@
   hardware.pulseaudio.enable = true;
 
   # misc
-  nix.maxJobs = 16;
+  nix.settings.max-jobs = 16;
 
 }

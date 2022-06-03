@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1612625732,
-        "narHash": "sha256-3q3GYcnBMeR87SRVfl/DFrukz4JuJ+KEq9ywycqyjE4=",
+        "lastModified": 1650262432,
+        "narHash": "sha256-3Y4wC9KWwOf7Vdavotnm8tB6sYrmMoZKintZI4e7R1c=",
         "owner": "plumelo",
         "repo": "nixos",
-        "rev": "9d892a56c4d00f8db3b7a86199eb617070819754",
+        "rev": "7eb235f538d9513967ac268da4a83c3e40fda10e",
         "type": "github"
       },
       "original": {
@@ -24,15 +24,16 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
+          "core",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1612561117,
-        "narHash": "sha256-UEB+5KCINGyaAfkgqWeUhUwyBxTrlTLO+FjbYCG4exk=",
+        "lastModified": 1654113406,
+        "narHash": "sha256-70esZvhal+FsyU89mJRcAb+cDGHKt0sgZ6MlRr9Cplg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "d4202875831a2d1b9dd3002d89b8c794af9e5a43",
+        "rev": "684e85d01d333be91c4875baebb05b93c7d2ffaa",
         "type": "github"
       },
       "original": {
@@ -41,13 +42,33 @@
         "type": "github"
       }
     },
+    "nix-vim": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1649270539,
+        "narHash": "sha256-3SiUQ9L4PmTWuR6kXnysRy0l1R0CtzwY+lyLgaz+XtU=",
+        "owner": "megheaiulian",
+        "repo": "nix-vim",
+        "rev": "68be52f11794a82c89a3adebe1286d4f8b431f87",
+        "type": "github"
+      },
+      "original": {
+        "owner": "megheaiulian",
+        "repo": "nix-vim",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1612907489,
-        "narHash": "sha256-6IyZoY4wwnaBD71r6fhk0AAvyaOwVqZGOLD/CxKIKZo=",
+        "lastModified": 1654019511,
+        "narHash": "sha256-s3fcwUxa2rV2ZmSbdOtisNmXqeqnF9IFrvhPQL5GCBU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "29a15e2c1f5ad64c235d78ba5e29a56fe520ad45",
+        "rev": "692517bf851f2d8d999f0ad50f53fa1d2dd5c8f9",
         "type": "github"
       },
       "original": {
@@ -60,6 +81,7 @@
     "root": {
       "inputs": {
         "core": "core",
+        "nix-vim": "nix-vim",
         "nixpkgs": "nixpkgs"
       }
     }

@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 {
-  imports = [ ./hardware.nix ];
+  imports = [ ./hardware.nix ./wg.nix ];
 
   nix = {
     package = pkgs.nixFlakes;
@@ -23,16 +23,23 @@
   };
 
   services.upower.enable = true;
-  programs.dconf.enable = true;
-  security.pam.services.swaylock = { };
   services.dbus.packages = [ pkgs.gcr ];
 
+  programs.sway.enable = true;
+  programs.sway.wrapperFeatures.gtk = true;
+  programs.sway.extraPackages = [ ];
+  services.logind.lidSwitch = "hibernate";
+
   fonts = {
-    fontconfig.defaultFonts. monospace = [ "DejaVuSansMono Nerd Font" ];
+    fontconfig.defaultFonts.monospace = [ "DejaVuSansMono Nerd Font" ];
     fonts = with pkgs; [ (nerdfonts.override { fonts = [ "DejaVuSansMono" ]; }) dejavu_fonts noto-fonts-emoji ];
   };
 
   hardware.sane.enable = true;
+  hardware.sane.extraBackends = [ pkgs.hplipWithPlugin ];
+  hardware.sane.netConf = "192.168.4.111";
+  services.printing.drivers = with pkgs; [ hplip ];
+
 
   users.users.iulian = {
     isNormalUser = true;
@@ -47,22 +54,21 @@
       "scanner"
       "lp"
       "adbusers"
+      "lxd"
     ];
+    subUidRanges = [{ startUid = 100000; count = 65536; }];
+    subGidRanges = [{ startGid = 100000; count = 65536; }];
   };
-
-  programs.evolution.enable = true;
-
-  services.openvpn.servers = {
-    plumelo = {
-      config = "config /home/iulian/.config/plumelo.ovpn";
-      autoStart = false;
-      updateResolvConf = true;
-    };
-  };
-
-  services.flatpak.enable = true;
-  xdg.portal.enable = true;
 
   programs.adb.enable = true;
-  virtualisation.lxc.enable = true;
+  hardware.bluetooth.enable = true;
+
+  # virtualisation.wine.enable = true;
+  virtualisation.lxd.enable = true;
+  virtualisation.lxc.lxcfs.enable = true;
+
+  programs.geary.enable = true;
+  services.gnome.evolution-data-server.enable = true;
+  services.gnome.gnome-keyring.enable = pkgs.lib.mkForce false;
+  environment.systemPackages = [ pkgs.gnome.gnome-calendar ];
 }
