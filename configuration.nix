@@ -70,5 +70,6 @@
   programs.geary.enable = true;
   services.gnome.evolution-data-server.enable = true;
   services.gnome.gnome-keyring.enable = pkgs.lib.mkForce false;
-  environment.systemPackages = [ pkgs.gnome.gnome-calendar ];
+  environment.systemPackages = with pkgs; [ gnome.gnome-calendar ];
+  system.stateVersion = "22.11";
 }

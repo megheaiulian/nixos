@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   imports = [ ./firefox.nix ];
+  home.stateVersion = "22.11";
   home.packages = with pkgs; [
     keepassxc
     nomachine-client
@@ -8,7 +9,7 @@
     slack
     remmina
     xdg_utils
-    #openmw
+    openmw
     gh
     libnotify
     tor-browser-bundle-bin
