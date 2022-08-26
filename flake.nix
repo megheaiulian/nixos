@@ -4,9 +4,8 @@
     core.url = "github:plumelo/nixos";
     core.inputs.nixpkgs.follows = "nixpkgs";
     core.inputs.home-manager.url = "github:nix-community/home-manager";
-    nixpkgs-nvim.url = "github:nixos/nixpkgs/6b4900c1f19295fbf734848fd7a7f6aa56195a42";
     nix-vim.url = "github:megheaiulian/nix-vim";
-    nix-vim.inputs.nixpkgs.follows = "nixpkgs-nvim";
+    nix-vim.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, core, nix-vim, ... }: {
