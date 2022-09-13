@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     core.url = "github:plumelo/nixos";
     core.inputs.nixpkgs.follows = "nixpkgs";
     core.inputs.home-manager.url = "github:nix-community/home-manager";
