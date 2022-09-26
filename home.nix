@@ -5,10 +5,10 @@
     keepassxc
     nomachine-client
     parsec-client
-    element-desktop
+    element-desktop-wayland
     slack
     remmina
-    xdg_utils
+    xdg-utils
     openmw
     gh
     libnotify

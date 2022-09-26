@@ -3,7 +3,6 @@
   imports = [ ./hardware.nix ./wg.nix ];
 
   nix = {
-    package = pkgs.nixFlakes;
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
@@ -29,6 +28,11 @@
   programs.sway.wrapperFeatures.gtk = true;
   programs.sway.extraPackages = [ ];
   services.logind.lidSwitch = "hibernate";
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [ xdg-desktop-portal-wlr xdg-desktop-portal-gtk ];
+  };
+  services.pipewire.enable = true;
 
   fonts = {
     fontconfig.defaultFonts.monospace = [ "DejaVuSansMono Nerd Font" ];
@@ -39,7 +43,6 @@
   hardware.sane.extraBackends = [ pkgs.hplipWithPlugin ];
   hardware.sane.netConf = "192.168.4.111";
   services.printing.drivers = with pkgs; [ hplip ];
-
 
   users.users.iulian = {
     isNormalUser = true;
