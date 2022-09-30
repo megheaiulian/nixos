@@ -5,7 +5,7 @@
     keepassxc
     nomachine-client
     parsec-client
-    element-desktop-wayland
+    element-desktop
     slack
     remmina
     xdg-utils
