@@ -52,7 +52,7 @@
 
   #broot
   programs.broot.enable = true;
-  programs.broot.verbs = [
+  programs.broot.settings.verbs = [
     {
       invocation = "p";
       execution = ":parent";
