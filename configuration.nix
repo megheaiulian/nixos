@@ -68,6 +68,7 @@
 
   # virtualisation.wine.enable = true;
   virtualisation.lxd.enable = true;
+  virtualisation.lxd.useQemu = true;
   virtualisation.lxc.lxcfs.enable = true;
 
   programs.geary.enable = true;
