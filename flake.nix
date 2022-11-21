@@ -16,14 +16,7 @@
         ./configuration.nix
         ({ ... }: {
           nix.registry.nixpkgs.flake = nixpkgs;
-          nixpkgs.overlays = [
-            (final: prev: ({
-              nur = import nur {
-                nurpkgs = prev;
-                pkgs = prev;
-              };
-            }))
-          ];
+          nixpkgs.overlays = [ nur.overlay ];
         })
 
 

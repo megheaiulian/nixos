@@ -55,4 +55,9 @@ in
       inherit settings;
     };
   };
+
+  home.sessionVariables = {
+    MOZ_ENABLE_WAYLAND = "0";
+  };
+
 }
