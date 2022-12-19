@@ -72,8 +72,13 @@
   virtualisation.lxc.lxcfs.enable = true;
 
   programs.geary.enable = true;
+  # programs.evolution.enable = true;
   services.gnome.evolution-data-server.enable = true;
   services.gnome.gnome-keyring.enable = pkgs.lib.mkForce false;
   environment.systemPackages = with pkgs; [ gnome.gnome-calendar ];
+
+  programs.gnome-disks.enable = true;
+  services.udisks2.enable = true;
+
   system.stateVersion = "22.11";
 }

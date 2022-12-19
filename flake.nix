@@ -6,7 +6,6 @@
     core.inputs.home-manager.url = "github:nix-community/home-manager";
     nix-vim.url = "github:megheaiulian/nix-vim";
     nix-vim.inputs.nixpkgs.follows = "nixpkgs";
-    nur.url = github:nix-community/NUR;
   };
 
   outputs = { self, nixpkgs, core, nix-vim, nur, ... }: {
@@ -14,11 +13,6 @@
       system = "x86_64-linux";
       modules = (builtins.attrValues core.nixosModules) ++ [
         ./configuration.nix
-        ({ ... }: {
-          nix.registry.nixpkgs.flake = nixpkgs;
-          nixpkgs.overlays = [ nur.overlay ];
-        })
-
 
         {
           home-manager.users.iulian = { ... }: {
