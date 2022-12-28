@@ -9,11 +9,11 @@
         "nur": "nur"
       },
       "locked": {
-        "lastModified": 1671438214,
-        "narHash": "sha256-YVd0UzR48Ga4nZyJZcyBe7Uw7jENdg/CgD6FW+Nn7Jg=",
+        "lastModified": 1672209944,
+        "narHash": "sha256-k2hzRXHM365HeHFsCjlH8OSRY4HoY9p/RO2q8VWz7Qk=",
         "owner": "plumelo",
         "repo": "nixos",
-        "rev": "b82b6be856af22a685533ed8734552da511e9e69",
+        "rev": "4b8b871cb7c51fe23d5beb78bf3c33fb94e957b8",
         "type": "github"
       },
       "original": {
@@ -82,11 +82,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1671425251,
-        "narHash": "sha256-8XGmWrF+zpI9+sTCHCLo2gbd2Z/5lQ5rWbSoIjyk6GM=",
+        "lastModified": 1672202773,
+        "narHash": "sha256-S/AoF4lM7p5NR6p5EOdzQjcnj5bQC6SYsnMjbrkspKM=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "9d70eeafc6cc2f97c5b769058d12631d74a994e3",
+        "rev": "db78e77d8a1412a8f65ef29ba56f6bfc7adcc14a",
         "type": "github"
       },
       "original": {
