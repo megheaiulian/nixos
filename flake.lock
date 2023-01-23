@@ -9,11 +9,11 @@
         "nur": "nur"
       },
       "locked": {
-        "lastModified": 1674063742,
-        "narHash": "sha256-BXEZUYCrY7wMSJInYPYBCYv16mnW5xq/QulTk+GTZqs=",
+        "lastModified": 1674452344,
+        "narHash": "sha256-iQxc50NrcPvGISzxRKqBLCX1XNISkoIm1WRsIOASfA4=",
         "owner": "plumelo",
         "repo": "nixos",
-        "rev": "1eea559377f0d4d52e2fffcdbb5b6bdc7aed8b0d",
+        "rev": "f3574d7c857ba71a683041dfcc5db5e34777c1c2",
         "type": "github"
       },
       "original": {
@@ -31,11 +31,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1674250603,
-        "narHash": "sha256-SBolFspxBHpW3hCCDNAFXUiO2mucmkVmf17UmSIK3Cs=",
+        "lastModified": 1674477719,
+        "narHash": "sha256-tciutt7rulypHZfbXp2j+5K6exyVAtsxF2//2J9BSvI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "275ab728912006eecb549338a50f24f294a7cfb7",
+        "rev": "ab25abf9e5c07b3c90d78aa06c44a4085ecba003",
         "type": "github"
       },
       "original": {
@@ -82,11 +82,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1674056681,
-        "narHash": "sha256-CS0CwyFk3FYK6QTNuVJFjqZGg5qo5FuvrcNHwJE31ww=",
+        "lastModified": 1674446728,
+        "narHash": "sha256-8nHe/8Ey51OrK+0TCw9ioRyTJ3X8Y2wqhJk/+VJ3FnU=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "ca61de8ba6f480b688a05b505c24495e88a4eb76",
+        "rev": "60fe6cfd854e6b3e57ecae194bc760a6a8653314",
         "type": "github"
       },
       "original": {
@@ -97,11 +97,11 @@
     },
     "nur_2": {
       "locked": {
-        "lastModified": 1674446728,
-        "narHash": "sha256-8nHe/8Ey51OrK+0TCw9ioRyTJ3X8Y2wqhJk/+VJ3FnU=",
+        "lastModified": 1674485204,
+        "narHash": "sha256-D1qhXQ+ANBos9lm/ZRg+PnaIK3M0wyayiMRN/IdT6xI=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "60fe6cfd854e6b3e57ecae194bc760a6a8653314",
+        "rev": "a0223f5262385bd2b5bfb34d1b8b6d78dcfda60a",
         "type": "github"
       },
       "original": {
