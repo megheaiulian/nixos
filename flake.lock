@@ -24,10 +24,7 @@
     },
     "home-manager": {
       "inputs": {
-        "nixpkgs": [
-          "core",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs",
         "utils": "utils"
       },
       "locked": {
@@ -51,11 +48,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1675318683,
-        "narHash": "sha256-bVHqbaoaSASkHaRhJ9jcf7NYngySnXZPk0BDCnAWuLU=",
+        "lastModified": 1675318895,
+        "narHash": "sha256-egqCO5KlrR3H7/QPRybBgShWAstbk5WncwudFrE2Bzs=",
         "owner": "megheaiulian",
         "repo": "nix-vim",
-        "rev": "31ef6299232a7e154810823b936e1b561a775f0d",
+        "rev": "1d9bc1305c1ec4bd9cace94d89898ecab882b2eb",
         "type": "github"
       },
       "original": {
@@ -65,6 +62,22 @@
       }
     },
     "nixpkgs": {
+      "locked": {
+        "lastModified": 1675183161,
+        "narHash": "sha256-Zq8sNgAxDckpn7tJo7V1afRSk2eoVbu3OjI1QklGLNg=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e1e1b192c1a5aab2960bf0a0bd53a2e8124fa18e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1675183161,
         "narHash": "sha256-Zq8sNgAxDckpn7tJo7V1afRSk2eoVbu3OjI1QklGLNg=",
@@ -113,7 +126,7 @@
       "inputs": {
         "core": "core",
         "nix-vim": "nix-vim",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_2",
         "nur": "nur_2"
       }
     },
